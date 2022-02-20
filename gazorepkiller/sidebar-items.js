@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["killing","If Reply tree has renewed, search tweet and kill gazorep. Else, wait a sec and try again."],["main","Entrypoint"]],"macro":[["console_log","console log macro"]]});

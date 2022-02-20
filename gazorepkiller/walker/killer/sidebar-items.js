@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["__wasm_bindgen_generated_kill__const",""]],"fn":[["kill","Kill tweet. For given argument element, set style to display: none."]]});

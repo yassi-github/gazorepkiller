@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["killing","If Reply tree has renewed, search tweet and kill gazorep. Else, wait a sec and try again."],["main","Entrypoint"]],"macro":[["console_log","console log macro"]]});
+initSidebarItems({"constant":[["DOM_PARSE_ERR_MSG",""],["__wasm_bindgen_generated_killing__const",""],["__wasm_bindgen_generated_main__const",""]],"fn":[["killing","If Reply tree has renewed, search tweet and kill gazorep. Else, wait a sec and try again."],["main","Entrypoint"]],"macro":[["console_log","console log macro"]],"mod":[["dom_util",""],["utils",""],["walker",""]]});

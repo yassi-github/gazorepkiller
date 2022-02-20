@@ -39,7 +39,7 @@ jobs:
         run: |
           REPOSITORY_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
           echo "::set-output name=CRATE_NAME::${REPOSITORY_NAME//-/_}"
-      - run: cargo doc --no-deps
+      - run: cargo doc --document-private-items --no-deps
       - name: Add redirect page
         run: echo '<meta http-equiv="refresh" content="0;URL=./${{ steps.config_values.outputs.CRATE_NAME }}/">' > ./target/doc/index.html
       - name: Deploy

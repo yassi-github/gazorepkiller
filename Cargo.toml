@@ -1,0 +1,42 @@
+[package]
+name = "gazorepkiller"
+version = "1.0.0"
+edition = "2021"
+description = "Remove Gazo reply from Tweet reply tree."
+repository = "https://github.com/yassi-github/gazorepkiller/"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+wasm-bindgen = "0.2.79"
+wasm-bindgen-futures = "0.4.29"
+wee_alloc = { version = "0.4.5", optional = true }
+console_error_panic_hook = { version = "0.1.6", optional = true }
+js-sys = "0.3.56"
+regex = "1.5.4"
+
+[dependencies.web-sys]
+version = "0.3.56"
+features = [
+    'Window',
+    'Document',
+    'HtmlElement',
+    'Element',
+    'HtmlCollection',
+    'console',
+    'CssStyleDeclaration',
+    'Location',
+]
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.29"
+
+[profile.release]
+opt-level = "s"

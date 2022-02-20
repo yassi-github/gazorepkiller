@@ -6,8 +6,6 @@
 
   "description": "Remove Gazo reply from Tweet reply tree.",
   
-  "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'",
-  
   "content_scripts": [
     {
       "matches": ["*://twitter.com/*"],

@@ -20,6 +20,10 @@ const DOM_PARSE_ERR_MSG: &str = "DOM Parsing Error";
 
 /// If Reply tree has renewed, search tweet and kill gazorep.
 /// Else, wait a sec and try again.
+///
+/// # Errors
+///
+/// Will return error message.
 #[wasm_bindgen]
 pub async fn killing() -> Result<(), JsValue> {
     #[allow(non_snake_case)]
@@ -50,6 +54,10 @@ pub async fn killing() -> Result<(), JsValue> {
 }
 
 /// Entrypoint
+///
+/// # Errors
+///
+/// Will return error message.
 #[wasm_bindgen(start)]
 pub async fn main() -> Result<(), JsValue> {
     panic::set_hook(Box::new(console_error_panic_hook::hook));
@@ -68,9 +76,9 @@ pub async fn main() -> Result<(), JsValue> {
         // If DOM not ready, sleep 500ms and try again.
         // If DOM ready, start killing.
         match dom_util::wait_dom_ready().await {
-            Ok(_) => {
+            Ok(()) => {
                 if let Err(e) = killing().await {
-                    console_log!("Oops! Error occurred while killing: {:?}", e);
+                    gazorepkiller_console_log!("Oops! Error occurred while killing: {:?}", e);
                     utils::sleep_ms(500).await?;
                     continue;
                 }

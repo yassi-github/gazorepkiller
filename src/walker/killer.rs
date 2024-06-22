@@ -12,7 +12,7 @@ pub fn kill(element: web_sys::Element) -> Result<(), JsValue> {
     element.style().set_property("display", "none")?;
     // debug
     // element.style().set_property("border", "5px dashed red")?;
-    // crate::console_log!("killed {}", element.inner_html());
+    // crate::gazorepkiller_console_log!("killed {}", element.inner_html());
 
     Ok(())
 }

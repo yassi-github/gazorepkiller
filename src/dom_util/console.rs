@@ -1,7 +1,7 @@
 /// console log macro
 ///
 /// ```
-/// macro_rules! console_log {
+/// macro_rules! gazorepkiller_console_log {
 ///    () => {
 ///        web_sys::console::log_1();
 ///    };
@@ -11,7 +11,7 @@
 ///}
 /// ```
 #[macro_export]
-macro_rules! console_log {
+macro_rules! gazorepkiller_console_log {
     () => {
         web_sys::console::log_1();
     };

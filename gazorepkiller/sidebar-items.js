@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"constant":["DOM_PARSE_ERR_MSG"],"fn":["killing","main"],"macro":["console_log"],"mod":["dom_util","utils","walker"]};
+window.SIDEBAR_ITEMS = {"constant":["DOM_PARSE_ERR_MSG"],"fn":["killing","main"],"macro":["gazorepkiller_console_log"],"mod":["dom_util","utils","walker"]};

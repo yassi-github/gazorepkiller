@@ -1,1 +1,1 @@
-initSidebarItems({"constant":[["__wasm_bindgen_generated_search_article__const",""],["__wasm_bindgen_generated_search_text_element__const",""]],"fn":[["search_article","Search tweet article by dom tree index. This method may incompatible with future varsion of twitter."],["search_text_element","Search tweet text by dom tree index. This method may incompatible with future varsion of twitter."]]});
+window.SIDEBAR_ITEMS = {"fn":["search_article","search_text_element"]};

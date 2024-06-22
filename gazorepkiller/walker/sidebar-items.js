@@ -1,1 +1,1 @@
-initSidebarItems({"constant":[["__wasm_bindgen_generated_search_and_kill__const",""]],"fn":[["search_and_kill","Search non-text-body tweet and kill it. Dig into each reply tweet that belongs as a child of the ReplyTree. Each reply tweet element may not a tweet. So if that a case, skip element."]],"mod":[["killer",""],["searcher",""]],"trait":[["TweetArticleSearcher",""]],"type":[["TweetArticle",""]]});
+window.SIDEBAR_ITEMS = {"fn":["search_and_kill"],"mod":["killer","searcher"],"trait":["TweetArticleSearcher"],"type":["TweetArticle"]};
